@@ -1,0 +1,71 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "GJ";
+}
+
+<script type="text/javascript">
+    function slide1() {
+        document.getElementById('id').src = "/imagens/A.png";
+        t1 = setTimeout("slide2()", 4000)
+        document.getElementById('aId').href = "/Video"
+        n = 0
+    }
+
+    function slide2() {
+        document.getElementById('id').src = "/imagens/B.png";
+        t2 = setTimeout("slide3()", 4000)
+        document.getElementById('aId').href = "/Project"
+        n = 1
+    }
+
+    function slide3() {
+        document.getElementById('id').src = "/imagens/C.png";
+        t3 = setTimeout("slide1()", 4000)
+        document.getElementById('aId').href = "link3.html"
+        n = 2
+    }
+
+    function mais() {
+        if (n == 0) { clearTimeout(t1); slide2() }
+        else if (n == 1) { clearTimeout(t2); slide3() }
+        else if (n == 2) { clearTimeout(t3); slide1() }
+    }
+
+    function menos() {
+        if (n == 0) { clearTimeout(t1); slide3()  }
+        else if (n == 1) { clearTimeout(t2); slide1() }
+        else if (n == 2) { clearTimeout(t3); slide2() }
+    }
+</script>
+
+<body onLoad="slide1()">
+    <div class="w-full h-auto center">
+        <a id="prev" href="javascript:menos()">
+            <img src="~/imagens/seta_esquerda.png" width="50" height="50" />
+        </a>
+        <a id="aId"><img id="id" width="300" height="300"></a>
+        <a id="next" href="javascript:mais()">
+            <img src="~/imagens/seta_direita.png" width="50" height="50" />
+        </a>
+    </div>
+    <div>
+        <div class="pl-020">
+            <h1>Últimos Textos</h1>
+        </div>
+        <div class="linha">
+            <div class="coluna coluna-05">
+                <img class="w-full" />
+                <p>
+                    Texto a
+                </p>
+            </div>
+            <div class="coluna coluna-05">
+                <img class="w-full" />
+                <p>
+                    Texto b
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
