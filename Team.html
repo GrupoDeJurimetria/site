@@ -1,35 +1,73 @@
-﻿@page
-@model GrupoJurimetria.Pages.TeamModel
-@{
-    ViewData["Title"] = "GJ";
-}
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GJ</title>
+        <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./site.css" runat="server" />
+        <link rel="shortcut icon" href="./imagens/icon_GJ.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-<body>
-    <div>
-        <div class="text-center">
-            <h1>Nossa Equipe</h1>
-        </div>
-        <div class="text-justify">
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;O Grupo de Jurimetria é uma equipe multidisciplinar formada por diversos estudantes de diferentes cursos. Nos propomos a transparecer desde o começo como a diversidade de ideias é um pilar importante para nosso grupo, para que possamos, além de suprir as diversas demandas que uma pesquisa jurimétrica pede, incluir diferentes discussões e debates em nossos estudos.
-            </p>
-        </div>
-        <div class="linha">
-            <div class="coluna coluna-05">
-                <div class="linha">
-                    <img src="~/imagens/Pessoa1.png" class="coluna" width="150" height="200"/>
-                    <p class="coluna text-justify">
-                        Rammses<br />Descrição
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html"><img src="./imagens/logo_GJ1.png" width="50" height="50" /></a>
+                    <a class="navbar-brand" >Grupo de<br />Jurimetria</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link text-dark"  href="/Index.html">Home</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link text-dark"  href="/AboutUs.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark"  href="/Team.html">Equipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark"  href="/Texts.html">Textos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div>
+            <div class="text-center">
+                <h1>Nossa Equipe</h1>
+            </div>
+            <div class="text-justify">
+                <p>
+                    O Grupo de Jurimetria é uma equipe multidisciplinar formada por diversos estudantes de diferentes cursos. Nos propomos a transparecer desde o começo como a diversidade de ideias é um pilar importante para nosso grupo, para que possamos, além de suprir as diversas demandas que uma pesquisa jurimétrica pede, incluir diferentes discussões e debates em nossos estudos.
+                </p>
+            </div>
+            <div class="linha">
+                <div class="coluna coluna-05">
+                    <div class="linha">
+                        <img src="~/imagens/Pessoa1.png" class="coluna" width="150" height="200"/>
+                        <p class="coluna text-justify">
+                            Rammses<br />Descrição
+                    </div>
+                </div>
+                <div class="coluna coluna-05">
+                    <div class="linha">
+                        <img class="coluna" src="~/imagens/Pessoa2.png" width="150" height="200"/>
+                        <p class="coluna text-justify">
+                            Nome<br />Descrição
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="coluna coluna-05">
-                <div class="linha">
-                    <img class="coluna" src="~/imagens/Pessoa2.png" width="150" height="200"/>
-                    <p class="coluna text-justify">
-                        Nome<br />Descrição
-                    </p>
-                </div>
-            </div>
         </div>
-    </div>
-</body>
+    </body>
+
+</html>

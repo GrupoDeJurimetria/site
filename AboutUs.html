@@ -1,19 +1,57 @@
-﻿<!-- @page
-@model PrivacyModel
-@{
-    ViewData["Title"] = "GJ";
-} -->
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Texts</title>
+        <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./site.css" runat="server" />
+        <link rel="shortcut icon" href="./imagens/icon_GJ.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="./imagens/logo_GJ1.png" width="50" height="50" /></a>
+                <a class="navbar-brand" asp-area="">Grupo de<br />Jurimetria</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" href="/Index.html">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" href="/AboutUs.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" href="/Team.html">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" href="/Texts.html">Textos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div>
         <h1 class="text-center">Quem somos?</h1>
         <div class="text-justify">
             <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;O Grupo de Jurimetria USP (GJ-USP) é um grupo de extensão e  pesquisa feita por iniciativa de alunos da graduação do IME-USP, FD-USP e  FEA-USP com o intuito de se aprofundar mais em questões relacionadas a  Jurimetria e suas diversas aplicações no universo jurídico.<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Temos como principal foco o desenvolvimento de conhecimentos  referentes a aplicação do método estatístico nos vários braços da área do Direito,  procurando sempre aprofundar, durante um semestre, uma problemática de uma  área jurídica escolhida.<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Além disso, procuramos trazer, junto com nossas pesquisas, um ambiente  amistoso para todo o meio universitário. Tentando trazer, sempre que tivermos  oportunidade, eventos de discussão e reflexão sobre as implicações e as  justificativas de uma ciência da Jurimetria.<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Posto que procuramos ser essa ponte que liga o meio universitário com  as aplicações e pesquisas jurimétricas recentes, temos sempre como principal foco a total transparência durante nossas pesquisas e discussões, ouvindo sempre as  sugestões e críticas de nossos colegas acadêmicos.<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;No mais, cabe apenas apontar que o grupo não procura apenas  pessoas especializadas no tema. Ressaltamos que estudantes interessados e  motivados para entrar na pesquisa (ou apenas acompanhá-la) são mais que bem  vindos em nossas discussões e debates!<br />
-            <p />
+                O Grupo de Jurimetria USP (GJ-USP) é um grupo de extensão e  pesquisa feita por iniciativa de alunos da graduação do IME-USP, FD-USP e  FEA-USP com o intuito de se aprofundar mais em questões relacionadas a  Jurimetria e suas diversas aplicações no universo jurídico.<br />
+                Temos como principal foco o desenvolvimento de conhecimentos  referentes a aplicação do método estatístico nos vários braços da área do Direito,  procurando sempre aprofundar, durante um semestre, uma problemática de uma  área jurídica escolhida.<br />
+                Além disso, procuramos trazer, junto com nossas pesquisas, um ambiente  amistoso para todo o meio universitário. Tentando trazer, sempre que tivermos  oportunidade, eventos de discussão e reflexão sobre as implicações e as  justificativas de uma ciência da Jurimetria.<br />
+                Posto que procuramos ser essa ponte que liga o meio universitário com  as aplicações e pesquisas jurimétricas recentes, temos sempre como principal foco a total transparência durante nossas pesquisas e discussões, ouvindo sempre as  sugestões e críticas de nossos colegas acadêmicos.<br />
+                No mais, cabe apenas apontar que o grupo não procura apenas  pessoas especializadas no tema. Ressaltamos que estudantes interessados e  motivados para entrar na pesquisa (ou apenas acompanhá-la) são mais que bem  vindos em nossas discussões e debates!<br />
+            </p>
         </div>
     </div>
     <div class="linha">
@@ -21,7 +59,7 @@
             <h1 class="text-center">Missão</h1>
             <div class="text-justify">
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Nos propomos a ser esse elo de comunicação entre a academia e a prática jurídica. Procuramos desmistificar o uso da metodologia estatística no Direito e mostrar como o uso correto e claro da análise de dados, pode deixar a ciência jurídica em um patamar mais condizente com o mundo que vivemos hoje.
+                    Nos propomos a ser esse elo de comunicação entre a academia e a prática jurídica. Procuramos desmistificar o uso da metodologia estatística no Direito e mostrar como o uso correto e claro da análise de dados, pode deixar a ciência jurídica em um patamar mais condizente com o mundo que vivemos hoje.
                 </p>
             </div>
         </div>
@@ -50,7 +88,7 @@
             <h1 class="text-center">Visão</h1>
             <div class="text-justify">
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Ser a referência dentro da academia, formando profissionais com uma visão diferenciado sobre a prática jurídica e da ciência de dados.
+                    Ser a referência dentro da academia, formando profissionais com uma visão diferenciado sobre a prática jurídica e da ciência de dados.
                 </p>
             </div>
         </div>
@@ -66,3 +104,4 @@
         </div>
     </div>
 </body>
+</html>
