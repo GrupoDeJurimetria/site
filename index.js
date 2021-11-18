@@ -1,14 +1,14 @@
 function slide1() {
   document.getElementById('id').src = './imagens/A.png';
   t1 = setTimeout('slide2()', 8000);
-  document.getElementById('aId').href = '/Video.html';
+  document.getElementById('aId').href = '/video.html';
   n = 0;
 }
 
 function slide2() {
   document.getElementById('id').src = './imagens/B.png';
   t2 = setTimeout('slide3()', 8000);
-  document.getElementById('aId').href = '/Project.html';
+  document.getElementById('aId').href = '/project.html';
   n = 1;
 }
 
